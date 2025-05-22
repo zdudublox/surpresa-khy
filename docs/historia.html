@@ -1,59 +1,144 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Para Khy</title>
+  <meta charset="UTF-8" />
+  <title>Nossa História</title>
   <style>
     body {
-      background-color: #ccc;
-      font-family: sans-serif;
-      padding: 20px;
-    }
-    .mensagem {
-      background: white;
-      padding: 15px 20px;
-      border-radius: 12px;
-      margin: 20px auto;
-      max-width: 600px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      animation: aparecer 0.6s ease forwards;
-    }
-    .imagem-container {
+      background-color: #d3d3d3; /* cinza claro */
+      font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 30px;
+      padding: 40px;
+      margin: 0;
     }
-    .imagem-container img {
-      max-width: 100%;
-      height: auto;
+
+    h1 {
+      color: #8b0000;
+    }
+
+    p.intro {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    details {
+      margin-top: 20px;
+      background-color: white;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px 20px;
+      text-align: left;
+      cursor: pointer;
     }
-    @keyframes aparecer {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+
+    summary {
+      font-size: 1.2em;
+      color: #800000;
+      outline: none;
+      user-select: none;
+    }
+
+    details[open] summary {
+      font-weight: bold;
+    }
+
+    details p {
+      margin-top: 10px;
+      font-size: 1.1em;
+      color: #333;
+      line-height: 1.4em;
+    }
+
+    p.thanks {
+      margin-top: 60px;
+      font-size: 1.1em;
+      color: #555;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      margin-top: 40px;
+      max-width: 300px;
+      width: 80%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
   </style>
 </head>
 <body>
 
-  <div class="mensagem">quanto te conheci eu achei que você era meio doidão, nunca imaginei me aproximar de você...</div>
-  <div class="mensagem">a gente aleatoriamente conversando a cada 3 meses sobre a coisa mais profunda da nossa mente...</div>
-  <div class="mensagem">lembro também das vezes que entrava no seu servidor sem saber nada sobre você...</div>
-  <div class="mensagem">as vezes que você me contava fofocas, me contava os rolês que você ia...</div>
-  <div class="mensagem">até que você começou a ser direto, me vendo crescer, e querendo crescer mais como pessoa...</div>
-  <div class="mensagem">de início não quis aceitar que falava isso pra mim, até que você foi direto...</div>
-  <div class="mensagem">e eu percebi que apesar de tudo também queria crescer com você...</div>
-  <div class="mensagem">e com o tempo nosso amor foi crescendo ainda mais até que tudo avançou...</div>
-  <div class="mensagem">a gente assumiu relacionamento, você veio aqui, eu te abracei e percebi que encontrei o que eu procurava...</div>
-  <div class="mensagem">uma casa (você), uma pessoa com quem posso contar...</div>
-  <div class="mensagem">e quando a gente teve nosso primeiro beijo, eu percebi que realmente te amava...</div>
-  <div class="mensagem">e sempre vou te amar, te vejo hoje e me orgulho muito...</div>
-  <div class="mensagem">quero que você se orgulhe de mim, pois eu VOU te fazer a pessoa mais feliz do mundo...</div>
-  <div class="mensagem">com amor, Dudu.</div>
+  <h1>Nossa História</h1>
+  <p class="intro">Por Dudu, com todo o carinho.</p>
 
-  <div class="imagem-container">
-    <img src="maos.png" alt="Mãos dadas">
-  </div>
+  <details>
+    <summary>Quando te conheci</summary>
+    <p>
+      Achei que você era meio doidão. Nunca imaginei que a gente fosse se aproximar.
+      Mas, curiosamente, a gente acabava se falando, a cada três meses, sobre algo extremamente profundo.
+    </p>
+  </details>
+
+  <details>
+    <summary>As visitas silenciosas</summary>
+    <p>
+      Lembro das vezes que entrava no seu servidor só pra ver se você estava bem.
+      Ficava cinco minutinhos, sem saber nada sobre você, mas querendo te ver.
+    </p>
+  </details>
+
+  <details>
+    <summary>Conversas e confissões</summary>
+    <p>
+      Você me contava fofocas, falava dos rolês que ia. Aos poucos, foi sendo mais direto.
+      Me via crescer. Queria crescer junto. E você estava decidido: queria alguém pra caminhar com você.
+    </p>
+  </details>
+
+  <details>
+    <summary>Quando percebi</summary>
+    <p>
+      De início, não quis aceitar que tudo aquilo era pra mim. Mas você foi claro.
+      E eu percebi: também queria crescer com você.
+    </p>
+  </details>
+
+  <details>
+    <summary>O amor crescendo</summary>
+    <p>
+      Nosso amor foi crescendo. Avançando. Assumimos o relacionamento.
+      Você veio aqui. Eu te abracei. E entendi: encontrei o que procurava. Você.
+    </p>
+  </details>
+
+  <details>
+    <summary>Nosso primeiro beijo</summary>
+    <p>
+      Quando aconteceu, eu soube. Eu te amava. E sempre vou te amar.
+      Te ver hoje me enche de orgulho. E quero que você se orgulhe de mim também.
+    </p>
+  </details>
+
+  <details>
+    <summary>Com amor</summary>
+    <p>
+      Eu vou te fazer a pessoa mais feliz do mundo. Com amor, Dudu.
+    </p>
+  </details>
+
+  <p class="thanks">
+    Obrigado por caminhar comigo.
+  </p>
+
+  <img src="maos.png" alt="Mãos Unidas" />
 
 </body>
 </html>
